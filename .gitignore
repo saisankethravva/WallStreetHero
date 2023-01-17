@@ -1,0 +1,12 @@
+stockapi/__pycache__/*
+stockapi/venv/*
+stockapi/config_local.py
+client1/node_modules/*
+client1/package-lock.json
+venv/
+
+stockapi/cert.pem
+stockapi/key.pem
+stockapi/test_container_required.json
+stockapi/startup_script_local.sh
+*.pyc

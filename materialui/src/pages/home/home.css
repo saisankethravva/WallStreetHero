@@ -1,0 +1,10 @@
+.home{
+    flex: 4 ;
+}
+
+.topNTables{
+    display:flex;
+    flex-direction:row;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}

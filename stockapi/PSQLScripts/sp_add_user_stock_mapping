@@ -1,0 +1,23 @@
+DROP PROCEDURE IF EXISTS sp_add_user_stock_mapping(
+	emailid VARCHAR ( 255 ),
+	symbol_p VARCHAR(10));
+	
+	
+create or replace procedure sp_add_user_stock_mapping(
+	emailid VARCHAR ( 255 ),
+	symbol_p VARCHAR(10)
+	)
+
+language plpgsql	
+as $$
+DECLARE 
+		userid INT;	
+BEGIN
+	
+    select user_id into userid from users u where u.email = emailid ;    
+	IF EXISTS(SELECT s.symbol FROM stockinfo s  WHERE s.symbol = symbol_p) and userid is not NULL THEN        
+		insert into users_stocks(user_id, symbol) VALUES (userid, symbol_p);
+    END IF;
+	
+END;
+$$;

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0%  { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.tableDesign{
+  border: solid;
+}
+
+/* table, th, td {
+  border: 1px solid black;
+  width: auto;
+border-collapse: collapse;
+text-align: center;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  tr:hover {background-color: white;}
+}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+} */
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+.header1{
+  /* :inline; */
+  /* margin: auto; */
+  /* font-style: italic;
+  color: black;
+  padding: 10px;
+ text-align: left;
+ /* background: black; */
+ /* color: white; */
+ /* font-size: 2em; */
+  text-align: left;
+  text-decoration: underline;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+  font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.selectButton{
+  background-color: darkblue; /* Green */
+  border: none;
+  color: White;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.selectButton:hover {
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: lightgrey}
+
+th {
+  background-color: darkblue;
+  color: white;
+}
+
+body{
+  overflow-x: hidden;
+}
